@@ -1,0 +1,1 @@
+<img src="img/fotoprofil.jpeg img/tentang.jpeg img/keahlian.jpeg" alt="Foto profil Muhammad Aidil Fachriyansyah" class="profile-photo mb-4">

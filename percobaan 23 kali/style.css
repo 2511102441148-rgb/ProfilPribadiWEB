@@ -1,0 +1,161 @@
+:root {
+  --bg: #0F1B2D;
+  --bg-soft: #16283F;
+  --text: #EAF0F6;
+  --muted: #9FB1C4;
+  --accent: #34C1B0;
+  --accent-2: #F2B84B;
+  --line: #2C4361;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  padding-top: 72px;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ---- Navigasi ---- */
+#mainNav {
+  background-color: rgba(15, 27, 45, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+
+#mainNav .navbar-brand {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+#mainNav .nav-link {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus {
+  color: var(--text);
+}
+
+/* ---- Beranda / Hero ---- */
+.hero {
+  padding: 5.5rem 0 4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero .eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.profile-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+  max-width: 14ch;
+}
+
+.hero p.lead {
+  color: var(--muted);
+  max-width: 55ch;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--bg);
+  border: none;
+  font-weight: 600;
+  padding: 0.7rem 1.6rem;
+  border-radius: 6px;
+}
+
+.btn-accent:hover {
+  background-color: #2aa89a;
+  color: var(--bg);
+}
+
+/* ---- Tentang ---- */
+.about {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.about p {
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+/* ---- Karya / Cards ---- */
+.karya {
+  padding: 4rem 0;
+}
+
+.card-custom {
+  background-color: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card-custom img {
+  width: 100%;
+  display: block;
+}
+
+.card-custom img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-photo-round {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.card-custom .card-photo-round img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+}
+
+.card-custom .card-body h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-custom .card-body p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: var(--bg-soft);
+  border-top: 1px solid var(--line);
+  padding: 1.6rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
